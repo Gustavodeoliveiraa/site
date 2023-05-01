@@ -1,0 +1,392 @@
+@font-face {
+    font-family: Quantum;
+    src: url(Quantum.otf);
+}
+html{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: #dfdfdf;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    overflow: auto;
+  }
+
+
+.button{
+    display: inline-flex;
+    margin-bottom: 7px;
+    padding: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 10px;
+    border: 2px solid rgb(255, 254, 254);
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bruno Ace SC', cursive;
+    color: #ffffff;
+    letter-spacing: 2px;
+    transition: .2s;
+
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 255, 0.849);
+    color: white;
+    border: 2px solid black;
+    font-size: 1.2em;
+}
+
+#header{
+    background: blue;
+    position: fixed;
+    top: 0;
+    display: flex;
+    width:  100%;
+    height: 60px;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 10px 13px -7px #000000;
+    z-index: 2;
+    
+    
+}
+
+.menu{
+    display: block;
+    position: fixed;
+    width: 0px;
+    top: 45px;
+    left: 0;
+    height: calc(100vh - 60px);
+    background-color: #cacaca;
+    font-family: 'Bruno Ace SC', cursive;
+    box-sizing: border-box;
+    transition: .6s cubic-bezier(.1,.51,.71,1.43);
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 0px 5px;
+}
+
+.logo{
+    margin-left: 30px;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: Quantum, Arial, Helvetica, sans-serif;
+    margin-bottom: 11px;
+    color: #c5c5c5;
+    }
+
+
+ul{
+    padding: 0;
+    box-shadow: 2px 8px 20px -8px rgba(0,0,0,0.9);
+}
+
+.menu li{
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 5px 0px;
+    margin: 0 1rem;
+ 
+
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding-top: 35px;
+    padding-bottom:  13px;
+}
+
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: none;
+
+}
+
+#nav.active .menu{
+    display: block;
+    width: 75%;
+}
+
+#btn-mobile{
+    margin-right: 30px;
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+    font-family: 'Cinzel', serif;
+    color: #f1f1f1;
+
+}
+
+#hamburger{
+    display: block;
+    border-top: 2px solid #f1f1f1;
+    width: 20px;
+
+
+}
+#hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #hamburger{
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before{
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+
+.main-section {
+
+    padding: 60px 20px 20px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    background-image: url(imagens/Porsche-Taycan_1.jpg);
+    background-position: center ;
+    background-size: cover;
+    background-attachment: local;
+    box-shadow: 2px 4px 10px black;
+  }
+
+.main-section h1{
+    font-family: Quantum, Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    letter-spacing: 0;
+     /* background: #FFFFFF; */
+    background: linear-gradient(-173deg, rgba(255,255,255,1) 21%, rgba(81,183,241,1) 55%, rgba(0,31,171,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    
+}
+
+.main-section h2{
+    font-family: Quantum, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    background: linear-gradient(-173deg, rgba(255,255,255,1) 21%, rgba(81,183,241,1) 55%, rgba(0,31,171,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-container p{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 1.3em;
+}
+
+.apresentation{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 8px;
+    font-family: Quantum, Arial, Helvetica, sans-serif;
+    color: blue;
+
+    
+    
+}
+
+.apresentation p{
+    font-size: 1.3em;
+    text-align: justify;
+    padding-left: 0;
+    white-space:  normal;
+    overflow-wrap: break-word;
+
+}
+.section-main-container{
+    margin-top: 10px;
+}
+
+.img-container{
+    margin-top: 10px;
+    background-image: url(imagens/2021-11-29.jpg);
+    display: flex;
+    background-position: bottom;
+    background-size: cover;
+    height: 300px;
+    width: 98%;
+    border-radius: 5px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 4px 10px black;
+}
+
+.white-glass{
+    width: 90%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    font-size: 1.3em;
+    font-family: 'Cinzel', serif;
+    color: rgb(255, 255, 255);
+
+}
+
+.white-glass p:nth-child(1){
+    display: inline-block;
+    margin: 0 auto;
+
+}
+
+.white-glass p{
+    margin: 8px;
+}
+
+.separate{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+.separate h2{
+    border-bottom: 2px solid black;
+    font-family: 'Cinzel', serif;
+}
+.galeria{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+}
+
+
+.foto{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.158);
+    overflow: hidden;
+    background-size: cover;
+    background-size: cover;
+    background-position: center top;
+    margin: 5px;
+
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.map{
+    height: 100%;
+    margin: 4px;
+    box-shadow: 10px 11px 19px -7px rgba(0,0,0,0.67),  -10px -11px 19px -7px rgba(0,0,0,0.67);
+}
+
+.map a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.map-interno{
+    background-image: url('https://maps.googleapis.com/maps/api/staticmap?scale=1&size=1600x900&style=feature:poi.business|visibility:off&style=feature:water|visibility:simplified&style=feature:road|element:labels.icon|visibility:off&style=feature:road.highway|element:labels|saturation:-90|lightness:25&format=jpg&language=pt-BR&region=BR&markers=color:0xdb5e5e|-23.4941875,-46.3904331&zoom=16&client=google-presto&signature=ajQvYIXg0IS3f_eovRuV6L07YJo');
+    height: 500px;
+}
+
+
+
+
+.adress{
+    width: 96%;
+    margin-bottom: 30px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1em;
+}
+
+.adress p{
+    margin: 5px;
+}
+
+
+.adress h3, a{
+    margin-left: 15px;
+}
+
+footer{
+    position: relative;
+    height: 90px;
+}
+.footer{
+    position: fixed;
+    top: calc(100% - 60px);
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: darkblue ;
+    border-radius: 5px 5px 0 0 ;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    color: white;
+    padding-bottom: 30px;
+    box-shadow: 0px -4px 22px -3px rgba(0,0,0,0.75);
+}
+
+.footer img{
+    margin: 20px;
+    filter: invert(100%);
+}
+
+.section-map{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
