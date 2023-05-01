@@ -369,7 +369,7 @@ footer{
     position: fixed;
     bottom: 0%;
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     width: 100%;
     height: 100px;
     justify-content: center;
