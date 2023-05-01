@@ -383,7 +383,7 @@ footer{
 }
 
 .footer img{
-    margin: 20px;
+    margin-right: 20px;
     filter: invert(100%);
 }
 
