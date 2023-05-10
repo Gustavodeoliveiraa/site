@@ -53,7 +53,8 @@ body{
 #header{
     padding-top: 10px;
     background: blue;
-    position: fixed;
+    /* position: fixed; */
+    position: relative;
     top: 0;
     display: flex;
     width:  100%;
