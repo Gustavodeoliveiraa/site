@@ -52,7 +52,7 @@ body{
 #header{
     
     /* padding-top: 10px; */
-    background: green;
+    background: yellow;
     /* background: blue; */
     position: fixed;
     top: 0;
@@ -62,7 +62,7 @@ body{
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    border-top: 0 auto;
+    /* border-top: 0 auto; */
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 0px 10px 13px -7px #000000;
