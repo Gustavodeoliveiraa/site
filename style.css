@@ -46,13 +46,11 @@ body{
     font-size: 1.2em;
 }
 
-#header a {
-    padding-top: 10px;
-}
+
 #header{
     
     /* padding-top: 10px; */
-    background: yellow;
+    background: red;
     /* background: blue; */
     position: fixed;
     top: 0;
