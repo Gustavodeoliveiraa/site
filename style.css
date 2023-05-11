@@ -2,11 +2,7 @@
     font-family: Quantum;
     src: url(Quantum.otf);
 }
-html{
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
+
 body{
     margin: 0;
     background: #dfdfdf;
