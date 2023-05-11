@@ -42,13 +42,10 @@ body{
     font-size: 1.2em;
 }
 
-#header a {
-    padding-top: 10px;
-}
 #header{
     
     /* padding-top: 10px; */
-    background: red;
+    background: black;
     /* background: blue; */
     position: fixed;
     top: 0;
@@ -58,11 +55,10 @@ body{
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    border-top: 0 auto;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 0px 10px 13px -7px #000000;
-    z-index: 2;    
+    z-index: 60;    
 }
 
 
