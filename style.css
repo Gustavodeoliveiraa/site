@@ -6,6 +6,10 @@ html{
     padding: 0;
     margin: 0;
     border: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    
 }
 body{
     padding: 0;
@@ -14,6 +18,8 @@ body{
     background: #dfdfdf;
     overflow-x: hidden;
     width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 .clearfix {
@@ -54,7 +60,7 @@ body{
     position: fixed;
     top: 0;
     display: flex;
-    width:  100%;
+    width: 100%;
     height: 60px;
     justify-content: space-between;
     justify-items: center;
@@ -63,7 +69,11 @@ body{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 0px 10px 13px -7px #000000;
+<<<<<<< HEAD
     z-index: 2;    
+=======
+    z-index: 999; 
+>>>>>>> 1caf816a8d93589ac20fb084276ced3ae010eb54
 }
 
 
