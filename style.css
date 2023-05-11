@@ -49,6 +49,7 @@ body{
 }
 
 #header{
+    
     padding-top: 10px;
     background: blue;
     position: fixed;
