@@ -8,9 +8,8 @@
     border: 0;
 } */
 body{
-    /* padding: 0; */
+    padding-top: 60px;
     margin: 0;
-    /* border: 0; */
     background: #dfdfdf;
     overflow-x: hidden;
     width: 100%;
