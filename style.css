@@ -8,7 +8,6 @@
     border: 0;
 } */
 body{
-    padding-top: 60px;
     margin: 0;
     background: #dfdfdf;
     overflow-x: hidden;
@@ -50,7 +49,7 @@ body{
 
 #header{
     background: blue;
-    position: fixed;
+    position: sticky;
     top: 0;
     display: flex;
     width:  100%;
