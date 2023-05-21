@@ -86,13 +86,13 @@ body{
 }
 
 .logo{
-    margin-left: 30px;
+    margin-left: 10px;
     font-size: 1.5em;
     text-decoration: none;
     font-family: Quantum, Arial, Helvetica, sans-serif;
     margin-bottom: 11px;
     color: #c5c5c5;
-    }
+}
 
 
 ul{
@@ -131,7 +131,6 @@ ul{
 }
 
 #btn-mobile{
-    margin-right: 30px;
     display: flex;
     padding: .5rem 1rem;
     font-size: 1rem;
@@ -145,6 +144,7 @@ ul{
 }
 
 #hamburger{
+    margin:  auto 0;
     display: block;
     border-top: 2px solid #f1f1f1;
     width: 20px;
@@ -177,7 +177,6 @@ ul{
 
 
 .main-section {
-
     padding: 60px 20px 20px 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -274,14 +273,13 @@ ul{
 
 }
 
-.white-glass p:nth-child(1){
-    display: inline-block;
-    margin: 0 auto;
 
-}
 
 .white-glass p{
-    margin: 8px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .separate{
@@ -298,10 +296,7 @@ ul{
 }
 .galeria{
   display: flex;
-  gap: 5px;
   flex-wrap: wrap;
-  justify-content: space-between;
-
 
 }
 
@@ -314,7 +309,7 @@ ul{
     background-size: cover;
     background-size: cover;
     background-position: center top;
-    margin: 5px;
+    margin: 1%;
 
 }
 
@@ -362,11 +357,12 @@ ul{
     margin-left: 15px;
 }
 
-footer{
+/* footer{
     position: relative;
     height: 90px;
-}
-.footer{
+} */
+
+.footer-container{
     position: fixed;
     bottom: 0%;
     display: flex;
@@ -379,23 +375,212 @@ footer{
     background-color: darkblue ;
     border-radius: 5px 5px 0 0 ;
     box-sizing: border-box;
-    font-size: 1.5em;
     color: white;
     box-shadow: 0px -4px 22px -3px rgba(0,0,0,0.75);
 }
 
+.footer{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+
+
+}
+
 .footer img{
     margin: 0;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     filter: invert(100%);
 }
 
+.footer a{
+    margin: 0;
+}
 .section-map{
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-@media (min-width: 481px){
+@media (min-width: 768px){
+    h2{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    #header{
+        height: 65px;
+        font-size: 1.3em;
+    }
+
+    #btn-mobile{
+        font-size: 1.2em;
+    }
+
+    #nav{
+        margin-right: 20px;
+    }
+
+    #hamburger{
+        border-top: 4px solid #f1f1f1;
+        width: 25px;
+    }
+
+    #hamburger::after, #hamburger::before{
+        border-top: 2px solid #f1f1f1;
+        width: 25px;
+        
+    }
+    
+    #nav.active #hamburger::before{
+        top: -1px;
+    }
+    
+    #nav.active #hamburger::after{
+        top: -10px;
+    }
+
+    .foto{
+        width: 48%;
+        box-shadow: 3px 4px 10px 0px rgb(0 0 0 / 70%),
+         -2px -2px 8px rgb(0 0 0 / 70%);
+    }
+
+    .footer{
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo{
+        margin-left: 40px;
+    }
+
+    .white-glass{
+        width: 90%;
+        font-size: 1.4em;
+        box-sizing: border-box;
+    }
+
+    .white-glass p{
+        padding: 6px;
+        margin: initial;
+    }
+
+    #nav.active .menu{
+        display: block;
+        width: 35%;
+    }
+
+    .main-section{
+        height: 120px;
+    }
+
+    .main-section > h2::before{
+        content: 'Auto ar Jr';
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .img-container{
+        width: 95%;
+    }
+    .galeria{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .foto{
+        width: 30.3%;
+        margin: 1.5%;
+    }
+
+    .map{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .adress{
+        display: flex;
+        justify-content: left;
+        margin-top: 20px;
+        
+    }
+
+    .contact1 p{
+        height: initial;
+        margin-right: 100px;
+    }
+
+    .contact2{
+        width: 50%;
+    }
+    .contact2 p {
+        padding: 0;
+        margin-left: 0;
+    }
+
+
+    .footer-container{
+        position: relative;
+    }
+}
+
+@media (min-width: 1440px){
+    #header{
+        height: 75px;
+    }
+
+    #nav{
+        margin-right: 40px;
+    }
+    .main-section h2{
+        margin-top: 50px;
+    }
+
+    .main-section{
+        height: 160px;
+    }
+
+    .logo{
+        padding-left: 2%;
+        font-size: 2em;
+    }
+
+    .apresentation{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.5em;
+        padding: 30px 0;
+    }
+
+    .apresentation p{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .img-container{
+        width: 80%;
+        height: 500px;
+    }
+
+    .white-glass p:first-child{
+        margin: 30px;
+
+    }
+
+    .white-glass p:last-child{
+        margin: 30px;
+
+    }
+
+    .map-interno{
+        height: 700px;
+    }
+
 
 }
