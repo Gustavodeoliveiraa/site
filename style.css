@@ -15,6 +15,9 @@ body{
     height: 100%;
 }
 
+
+
+
 .clearfix {
     overflow: auto;
 }
@@ -128,6 +131,18 @@ ul{
 #nav.active .menu{
     display: block;
     width: 75%;
+}
+
+a.line-through{
+    text-decoration: line-through;
+}
+
+.menu .none:hover{
+    background-color: #cacaca;
+}
+
+.menu .none:hover a{
+    cursor: default;
 }
 
 #btn-mobile{
@@ -538,12 +553,14 @@ ul{
     #nav{
         margin-right: 40px;
     }
-    .main-section h2{
-        margin-top: 50px;
-    }
 
     .main-section{
-        height: 160px;
+        height: 200px;
+        font-size: 1.5em;
+    }
+
+    .main-section h2{
+        margin-top: 50px;
     }
 
     .logo{
@@ -582,5 +599,67 @@ ul{
         height: 700px;
     }
 
+    .map{
+        width: 80%;
+    }
 
+    .adress{
+        float: left;
+        width: 40%;
+        justify-content: right;
+        margin-left: 10%;
+        justify-content: left;
+    }
+
+    
+    footer {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .footer-container{
+        background-color: inherit;
+        height: 300px;
+        box-shadow: none;
+        color: rgba(255, 255, 255, 0.932);
+        filter: invert(100%);
+
+    }
+
+    .footer{
+        flex-direction: column;
+
+    }
+
+    .footer a{
+        text-decoration: none;
+    }
+
+    .footer a:first-child p::after{
+        content: "Facebook";
+        font-size: 2em;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.932);
+        padding-left: 15px;
+        font-family: 'Cinzel', serif
+        
+    }
+    
+    .footer a:nth-child(2) p::after{
+        content: "Whatsapp";
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.932);
+        padding-left: 15px;
+        font-family: 'Cinzel', serif
+    }
+
+    .footer a:last-child p::after{
+        content: "Instagram";
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.932);
+        padding-left: 15px;
+        font-family: 'Cinzel', serif
+
+
+    }
 }
