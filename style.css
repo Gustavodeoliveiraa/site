@@ -523,6 +523,8 @@ a.line-through{
         display: flex;
         justify-content: left;
         margin-top: 20px;
+        float: left;
+        width: 60%;
         
     }
 
@@ -539,10 +541,67 @@ a.line-through{
         margin-left: 0;
     }
 
+    footer {
+        display: inline-flex;
+        width: 37%;
+    }
 
     .footer-container{
         position: relative;
     }
+
+  
+    .footer-container{
+        background-color: inherit;
+        height: 300px;
+        box-shadow: none;
+        filter: invert(100%);
+    }
+
+    .footer{
+        flex-direction: column;
+        margin: 0;
+        margin-left: auto;
+        padding-right: 10px;
+    }
+    
+    .footer p{
+        white-space: nowrap;
+
+    }
+
+    .footer a:first-child p::after{
+        content: "Facebook";
+        font-size: 1.3em;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.932);
+        padding-left: 15px;
+        font-family: 'Cinzel', serif
+        
+    }
+    
+    .footer a:nth-child(2) p::after{
+        content: "Whatsapp";
+        font-size: 1.3em;
+        color: rgba(255, 255, 255, 0.932);
+        padding-left: 15px;
+        font-family: 'Cinzel', serif
+    }
+
+    .footer a:last-child p::after{
+        content: "Instagram";
+        font-size: 1.3em;
+        color: rgba(255, 255, 255, 0.932);
+        padding-left: 15px;
+        font-family: 'Cinzel', serif
+    }
+
+    
+    .footer a{
+        text-decoration: none;
+    }
+
+
 }
 
 @media (min-width: 1440px){
@@ -613,53 +672,17 @@ a.line-through{
 
     
     footer {
-        display: inline-block;
+        display: inline-flex;
         width: 40%;
     }
 
-    .footer-container{
-        background-color: inherit;
-        height: 300px;
-        box-shadow: none;
-        color: rgba(255, 255, 255, 0.932);
-        filter: invert(100%);
-
-    }
-
-    .footer{
-        flex-direction: column;
-
-    }
-
-    .footer a{
-        text-decoration: none;
-    }
-
-    .footer a:first-child p::after{
-        content: "Facebook";
+ 
+    .footer a:first-child p::after,
+    .footer a:last-child p::after,
+    .footer a:nth-child(2) p::after
+    {
         font-size: 2em;
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.932);
-        padding-left: 15px;
-        font-family: 'Cinzel', serif
-        
     }
     
-    .footer a:nth-child(2) p::after{
-        content: "Whatsapp";
-        font-size: 2em;
-        color: rgba(255, 255, 255, 0.932);
-        padding-left: 15px;
-        font-family: 'Cinzel', serif
-    }
-
-    .footer a:last-child p::after{
-        content: "Instagram";
-        font-size: 2em;
-        color: rgba(255, 255, 255, 0.932);
-        padding-left: 15px;
-        font-family: 'Cinzel', serif
-
-
-    }
+ 
 }
