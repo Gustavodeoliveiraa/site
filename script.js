@@ -46,26 +46,5 @@ document.addEventListener('touchmove', function(event) {
     }
 })
 
-<<<<<<< HEAD
 // 
 
-=======
-//  
-    // Função para rolagem suave ao clicar nos links do menu
-function scrollToSection(event) {
-    event.preventDefault();
-    const target = event.target;
-    const sectionId = target.getAttribute("href");
-    const section = document.querySelector(sectionId);
-    window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth"
-    });
-  }
-
-  // Adicionar o evento de clique aos links do menu
-const menuLinks_ = document.querySelectorAll(".menu a");
-menuLinks_.forEach(link => {
-    link.addEventListener("click", scrollToSection);
-});
->>>>>>> teste
